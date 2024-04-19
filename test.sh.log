@@ -767,3 +767,295 @@ Killing qemu
 qemu-system-aarch64: terminating on signal 15 from pid 474958 ()
 ~/embedded_linux/assignments-4-eolatuyi/assignment-autotest/test/assignment4-buildroot
 Test of assignment assignment4-buildroot complete with success
+Running test with user ebenezer
+Executing assignment test script
+~/embedded_linux/assignments-4-eolatuyi ~/embedded_linux/assignments-4-eolatuyi/assignment-autotest/test/assignment4-buildroot
+starting test with SKIP_BUILD  and DO_VALIDATE 
+Private key is not set, attempts to clone may fail
+Or CI environment may have setup SSH authentication already...
+Running as:
+ebenezer
+# github.com:22 SSH-2.0-babeld-b3894e61
+# github.com:22 SSH-2.0-babeld-b3894e61
+# github.com:22 SSH-2.0-babeld-b3894e61
+# github.com:22 SSH-2.0-babeld-b3894e61
+# github.com:22 SSH-2.0-babeld-b3894e61
+Added known host github.com:
+Running build.sh for the first time
+Synchronizing submodule url for 'assignment-autotest'
+Synchronizing submodule url for 'buildroot'
+MISSING BUILDROOT CONFIGURATION FILE
+USING base_external/configs/aesd_qemu_defconfig
+make: Entering directory '/home/ebenezer/embedded_linux/assignments-4-eolatuyi/buildroot'
+#
+# configuration written to /home/ebenezer/embedded_linux/assignments-4-eolatuyi/buildroot/.config
+#
+make: Leaving directory '/home/ebenezer/embedded_linux/assignments-4-eolatuyi/buildroot'
+Running build.sh for the second time as user:
+ebenezer
+Synchronizing submodule url for 'assignment-autotest'
+Synchronizing submodule url for 'buildroot'
+USING EXISTING BUILDROOT CONFIG
+To force update, delete .config or make changes using make menuconfig and build again.
+make: Entering directory '/home/ebenezer/embedded_linux/assignments-4-eolatuyi/buildroot'
+/usr/bin/make -j1 O=/home/ebenezer/embedded_linux/assignments-4-eolatuyi/buildroot/output HOSTCC="/usr/bin/gcc" HOSTCXX="/usr/bin/g++" syncconfig
+[7m>>>   Finalizing host directory[27m
+[7m>>>   Finalizing target directory[27m
+mkdir -p /home/ebenezer/embedded_linux/assignments-4-eolatuyi/buildroot/output/host/etc/meson
+sed -e "s%@TARGET_CFLAGS@%'-D_LARGEFILE_SOURCE', '-D_LARGEFILE64_SOURCE', '-D_FILE_OFFSET_BITS=64', '-Os', '-g0'@PKG_TARGET_CFLAGS@%g" -e "s%@TARGET_LDFLAGS@%@PKG_TARGET_LDFLAGS@%g" -e "s%@TARGET_CXXFLAGS@%'-D_LARGEFILE_SOURCE', '-D_LARGEFILE64_SOURCE', '-D_FILE_OFFSET_BITS=64', '-Os', '-g0'@PKG_TARGET_CXXFLAGS@%g"         -e "s%@TARGET_CC@%/home/ebenezer/embedded_linux/assignments-4-eolatuyi/buildroot/output/host/bin/aarch64-buildroot-linux-uclibc-gcc%g" -e "s%@TARGET_CXX@%/home/ebenezer/embedded_linux/assignments-4-eolatuyi/buildroot/output/host/bin/aarch64-buildroot-linux-uclibc-g++%g" -e "s%@TARGET_AR@%/home/ebenezer/embedded_linux/assignments-4-eolatuyi/buildroot/output/host/bin/aarch64-buildroot-linux-uclibc-gcc-ar%g" -e "s%@TARGET_STRIP@%/home/ebenezer/embedded_linux/assignments-4-eolatuyi/buildroot/output/host/bin/aarch64-buildroot-linux-uclibc-strip%g" -e "s%@TARGET_ARCH@%aarch64%g" -e "s%@TARGET_CPU@%cortex-a53%g" -e "s%@TARGET_ENDIAN@%little%g" -e "s%@TARGET_CFLAGS@%%g" -e "s%@TARGET_LDFLAGS@%%g" -e "s%@TARGET_CXXFLAGS@%%g" -e "s%@BR2_CMAKE@%/usr/bin/cmake%g" -e "s%@PKGCONF_HOST_BINARY@%/home/ebenezer/embedded_linux/assignments-4-eolatuyi/buildroot/output/host/bin/pkgconf%g" -e "s%@HOST_DIR@%/home/ebenezer/embedded_linux/assignments-4-eolatuyi/buildroot/output/host%g" -e "s%@STAGING_DIR@%/home/ebenezer/embedded_linux/assignments-4-eolatuyi/buildroot/output/host/aarch64-buildroot-linux-uclibc/sysroot%g" -e "s%@STATIC@%false%g" /home/ebenezer/embedded_linux/assignments-4-eolatuyi/buildroot/support/misc/cross-compilation.conf.in > /home/ebenezer/embedded_linux/assignments-4-eolatuyi/buildroot/output/host/etc/meson/cross-compilation.conf.in
+sed         -e "s%@TARGET_CC@%/home/ebenezer/embedded_linux/assignments-4-eolatuyi/buildroot/output/host/bin/aarch64-buildroot-linux-uclibc-gcc%g" -e "s%@TARGET_CXX@%/home/ebenezer/embedded_linux/assignments-4-eolatuyi/buildroot/output/host/bin/aarch64-buildroot-linux-uclibc-g++%g" -e "s%@TARGET_AR@%/home/ebenezer/embedded_linux/assignments-4-eolatuyi/buildroot/output/host/bin/aarch64-buildroot-linux-uclibc-gcc-ar%g" -e "s%@TARGET_STRIP@%/home/ebenezer/embedded_linux/assignments-4-eolatuyi/buildroot/output/host/bin/aarch64-buildroot-linux-uclibc-strip%g" -e "s%@TARGET_ARCH@%aarch64%g" -e "s%@TARGET_CPU@%cortex-a53%g" -e "s%@TARGET_ENDIAN@%little%g" -e "s%@TARGET_CFLAGS@%'-D_LARGEFILE_SOURCE', '-D_LARGEFILE64_SOURCE', '-D_FILE_OFFSET_BITS=64', '-Os', '-g0'%g" -e "s%@TARGET_LDFLAGS@%%g" -e "s%@TARGET_CXXFLAGS@%'-D_LARGEFILE_SOURCE', '-D_LARGEFILE64_SOURCE', '-D_FILE_OFFSET_BITS=64', '-Os', '-g0'%g" -e "s%@BR2_CMAKE@%/usr/bin/cmake%g" -e "s%@PKGCONF_HOST_BINARY@%/home/ebenezer/embedded_linux/assignments-4-eolatuyi/buildroot/output/host/bin/pkgconf%g" -e "s%@HOST_DIR@%/home/ebenezer/embedded_linux/assignments-4-eolatuyi/buildroot/output/host%g" -e "s%@STAGING_DIR@%/home/ebenezer/embedded_linux/assignments-4-eolatuyi/buildroot/output/host/aarch64-buildroot-linux-uclibc/sysroot%g" -e "s%@STATIC@%false%g" /home/ebenezer/embedded_linux/assignments-4-eolatuyi/buildroot/support/misc/cross-compilation.conf.in > /home/ebenezer/embedded_linux/assignments-4-eolatuyi/buildroot/output/host/etc/meson/cross-compilation.conf
+/usr/bin/sed -i -e '/# GENERIC_SERIAL$/s~^.*#~console::respawn:/sbin/getty -L  console 0 vt100 #~' /home/ebenezer/embedded_linux/assignments-4-eolatuyi/buildroot/output/target/etc/inittab
+/usr/bin/sed -i -e '/^#.*-o remount,rw \/$/s~^#\+~~' /home/ebenezer/embedded_linux/assignments-4-eolatuyi/buildroot/output/target/etc/inittab
+if grep -q CONFIG_ASH=y /home/ebenezer/embedded_linux/assignments-4-eolatuyi/buildroot/output/build/busybox-1.35.0/.config; then grep -qsE '^/bin/ash$' /home/ebenezer/embedded_linux/assignments-4-eolatuyi/buildroot/output/target/etc/shells || echo "/bin/ash" >> /home/ebenezer/embedded_linux/assignments-4-eolatuyi/buildroot/output/target/etc/shells; fi
+if grep -q CONFIG_HUSH=y /home/ebenezer/embedded_linux/assignments-4-eolatuyi/buildroot/output/build/busybox-1.35.0/.config; then grep -qsE '^/bin/hush$' /home/ebenezer/embedded_linux/assignments-4-eolatuyi/buildroot/output/target/etc/shells || echo "/bin/hush" >> /home/ebenezer/embedded_linux/assignments-4-eolatuyi/buildroot/output/target/etc/shells; fi
+mkdir -p /home/ebenezer/embedded_linux/assignments-4-eolatuyi/buildroot/output/target/etc
+echo "buildroot" > /home/ebenezer/embedded_linux/assignments-4-eolatuyi/buildroot/output/target/etc/hostname
+/usr/bin/sed -i -e '$a \127.0.1.1\tbuildroot' -e '/^127.0.1.1/d' /home/ebenezer/embedded_linux/assignments-4-eolatuyi/buildroot/output/target/etc/hosts
+mkdir -p /home/ebenezer/embedded_linux/assignments-4-eolatuyi/buildroot/output/target/etc
+echo "Welcome to Buildroot" > /home/ebenezer/embedded_linux/assignments-4-eolatuyi/buildroot/output/target/etc/issue
+/usr/bin/sed -i -e s,^root:[^:]*:,root:"`/home/ebenezer/embedded_linux/assignments-4-eolatuyi/buildroot/output/host/bin/mkpasswd -m "sha-256" "root"`":, /home/ebenezer/embedded_linux/assignments-4-eolatuyi/buildroot/output/target/etc/shadow
+grep -qsE '^/bin/sh$' /home/ebenezer/embedded_linux/assignments-4-eolatuyi/buildroot/output/target/etc/shells || echo "/bin/sh" >> /home/ebenezer/embedded_linux/assignments-4-eolatuyi/buildroot/output/target/etc/shells
+if [ -x /home/ebenezer/embedded_linux/assignments-4-eolatuyi/buildroot/output/target/sbin/swapon -a -x /home/ebenezer/embedded_linux/assignments-4-eolatuyi/buildroot/output/target/sbin/swapoff ]; then /usr/bin/sed -i -e '/^#.*\/sbin\/swap/s/^#\+[[:blank:]]*//' /home/ebenezer/embedded_linux/assignments-4-eolatuyi/buildroot/output/target/etc/inittab; else /usr/bin/sed -i -e '/^[^#].*\/sbin\/swap/s/^/#/' /home/ebenezer/embedded_linux/assignments-4-eolatuyi/buildroot/output/target/etc/inittab; fi
+if test -d /home/ebenezer/embedded_linux/assignments-4-eolatuyi/buildroot/output/target/lib/modules/`MAKEFLAGS='--no-print-directory --' /usr/bin/make -j3 HOSTCC="/home/ebenezer/embedded_linux/assignments-4-eolatuyi/buildroot/output/host/bin/ccache /usr/bin/gcc -O2 -I/home/ebenezer/embedded_linux/assignments-4-eolatuyi/buildroot/output/host/include -L/home/ebenezer/embedded_linux/assignments-4-eolatuyi/buildroot/output/host/lib -Wl,-rpath,/home/ebenezer/embedded_linux/assignments-4-eolatuyi/buildroot/output/host/lib" ARCH=arm64 INSTALL_MOD_PATH=/home/ebenezer/embedded_linux/assignments-4-eolatuyi/buildroot/output/target CROSS_COMPILE="/home/ebenezer/embedded_linux/assignments-4-eolatuyi/buildroot/output/host/bin/aarch64-buildroot-linux-uclibc-" WERROR=0 REGENERATE_PARSERS=1 DEPMOD=/home/ebenezer/embedded_linux/assignments-4-eolatuyi/buildroot/output/host/sbin/depmod INSTALL_MOD_STRIP=1 -C /home/ebenezer/embedded_linux/assignments-4-eolatuyi/buildroot/output/build/linux-5.15.18 --no-print-directory -s kernelrelease 2>/dev/null` && grep -q "CONFIG_MODULES=y" /home/ebenezer/embedded_linux/assignments-4-eolatuyi/buildroot/output/build/linux-5.15.18/.config; then /home/ebenezer/embedded_linux/assignments-4-eolatuyi/buildroot/output/host/sbin/depmod -a -b /home/ebenezer/embedded_linux/assignments-4-eolatuyi/buildroot/output/target `MAKEFLAGS='--no-print-directory --' /usr/bin/make -j3 HOSTCC="/home/ebenezer/embedded_linux/assignments-4-eolatuyi/buildroot/output/host/bin/ccache /usr/bin/gcc -O2 -I/home/ebenezer/embedded_linux/assignments-4-eolatuyi/buildroot/output/host/include -L/home/ebenezer/embedded_linux/assignments-4-eolatuyi/buildroot/output/host/lib -Wl,-rpath,/home/ebenezer/embedded_linux/assignments-4-eolatuyi/buildroot/output/host/lib" ARCH=arm64 INSTALL_MOD_PATH=/home/ebenezer/embedded_linux/assignments-4-eolatuyi/buildroot/output/target CROSS_COMPILE="/home/ebenezer/embedded_linux/assignments-4-eolatuyi/buildroot/output/host/bin/aarch64-buildroot-linux-uclibc-" WERROR=0 REGENERATE_PARSERS=1 DEPMOD=/home/ebenezer/embedded_linux/assignments-4-eolatuyi/buildroot/output/host/sbin/depmod INSTALL_MOD_STRIP=1 -C /home/ebenezer/embedded_linux/assignments-4-eolatuyi/buildroot/output/build/linux-5.15.18 --no-print-directory -s kernelrelease 2>/dev/null`; fi
+printf '%s\n' C en_US locale-archive > /home/ebenezer/embedded_linux/assignments-4-eolatuyi/buildroot/output/build/locales.nopurge
+for dir in /home/ebenezer/embedded_linux/assignments-4-eolatuyi/buildroot/output/target/usr/share/locale /home/ebenezer/embedded_linux/assignments-4-eolatuyi/buildroot/output/target/usr/share/X11/locale /home/ebenezer/embedded_linux/assignments-4-eolatuyi/buildroot/output/target/usr/lib/locale; do if [ ! -d $dir ]; then continue; fi; for langdir in $dir/*; do if [ -e "${langdir}" ]; then grep -qx "${langdir##*/}" /home/ebenezer/embedded_linux/assignments-4-eolatuyi/buildroot/output/build/locales.nopurge || rm -rf $langdir; fi done; done
+if [ -d /home/ebenezer/embedded_linux/assignments-4-eolatuyi/buildroot/output/target/usr/share/X11/locale ]; then for lang in C en_US; do if [ -f /home/ebenezer/embedded_linux/assignments-4-eolatuyi/buildroot/output/target/usr/share/X11/locale/$lang/XLC_LOCALE ]; then echo "$lang/XLC_LOCALE: $lang"; fi done > /home/ebenezer/embedded_linux/assignments-4-eolatuyi/buildroot/output/target/usr/share/X11/locale/locale.dir; fi
+rm -rf /home/ebenezer/embedded_linux/assignments-4-eolatuyi/buildroot/output/target/usr/include /home/ebenezer/embedded_linux/assignments-4-eolatuyi/buildroot/output/target/usr/share/aclocal \
+	/home/ebenezer/embedded_linux/assignments-4-eolatuyi/buildroot/output/target/usr/lib/pkgconfig /home/ebenezer/embedded_linux/assignments-4-eolatuyi/buildroot/output/target/usr/share/pkgconfig \
+	/home/ebenezer/embedded_linux/assignments-4-eolatuyi/buildroot/output/target/usr/lib/cmake /home/ebenezer/embedded_linux/assignments-4-eolatuyi/buildroot/output/target/usr/share/cmake \
+	/home/ebenezer/embedded_linux/assignments-4-eolatuyi/buildroot/output/target/usr/doc
+find /home/ebenezer/embedded_linux/assignments-4-eolatuyi/buildroot/output/target/usr/{lib,share}/ -name '*.cmake' -print0 | xargs -0 rm -f
+find /home/ebenezer/embedded_linux/assignments-4-eolatuyi/buildroot/output/target/lib/ /home/ebenezer/embedded_linux/assignments-4-eolatuyi/buildroot/output/target/usr/lib/ /home/ebenezer/embedded_linux/assignments-4-eolatuyi/buildroot/output/target/usr/libexec/ \
+	\( -name '*.a' -o -name '*.la' -o -name '*.prl' \) -print0 | xargs -0 rm -f
+find: ‘/home/ebenezer/embedded_linux/assignments-4-eolatuyi/buildroot/output/target/usr/libexec/’: No such file or directory
+rm -rf /home/ebenezer/embedded_linux/assignments-4-eolatuyi/buildroot/output/target/usr/share/gdb
+rm -rf /home/ebenezer/embedded_linux/assignments-4-eolatuyi/buildroot/output/target/usr/share/bash-completion
+rm -rf /home/ebenezer/embedded_linux/assignments-4-eolatuyi/buildroot/output/target/etc/bash_completion.d
+rm -rf /home/ebenezer/embedded_linux/assignments-4-eolatuyi/buildroot/output/target/usr/share/zsh
+rm -rf /home/ebenezer/embedded_linux/assignments-4-eolatuyi/buildroot/output/target/usr/man /home/ebenezer/embedded_linux/assignments-4-eolatuyi/buildroot/output/target/usr/share/man
+rm -rf /home/ebenezer/embedded_linux/assignments-4-eolatuyi/buildroot/output/target/usr/info /home/ebenezer/embedded_linux/assignments-4-eolatuyi/buildroot/output/target/usr/share/info
+rm -rf /home/ebenezer/embedded_linux/assignments-4-eolatuyi/buildroot/output/target/usr/doc /home/ebenezer/embedded_linux/assignments-4-eolatuyi/buildroot/output/target/usr/share/doc
+rm -rf /home/ebenezer/embedded_linux/assignments-4-eolatuyi/buildroot/output/target/usr/share/gtk-doc
+rmdir /home/ebenezer/embedded_linux/assignments-4-eolatuyi/buildroot/output/target/usr/share 2>/dev/null || true
+rm -rf /home/ebenezer/embedded_linux/assignments-4-eolatuyi/buildroot/output/target/lib/debug /home/ebenezer/embedded_linux/assignments-4-eolatuyi/buildroot/output/target/usr/lib/debug
+find /home/ebenezer/embedded_linux/assignments-4-eolatuyi/buildroot/output/target   -type f \( -perm /111 -o -name '*.so*' \) -not \( -name 'libpthread*.so*' -o -name 'ld-*.so*' -o -name '*.ko' \) -print0 | xargs -0 /home/ebenezer/embedded_linux/assignments-4-eolatuyi/buildroot/output/host/bin/aarch64-buildroot-linux-uclibc-strip --remove-section=.comment --remove-section=.note 2>/dev/null || true
+find /home/ebenezer/embedded_linux/assignments-4-eolatuyi/buildroot/output/target   \( -name 'ld-*.so*' -o -name 'libpthread*.so*' \) -print0 | xargs -0 -r /home/ebenezer/embedded_linux/assignments-4-eolatuyi/buildroot/output/host/bin/aarch64-buildroot-linux-uclibc-strip --remove-section=.comment --remove-section=.note --strip-debug 2>/dev/null || true
+test -f /home/ebenezer/embedded_linux/assignments-4-eolatuyi/buildroot/output/target/etc/ld.so.conf && \
+	{ echo "ERROR: we shouldn't have a /etc/ld.so.conf file"; exit 1; } || true
+test -d /home/ebenezer/embedded_linux/assignments-4-eolatuyi/buildroot/output/target/etc/ld.so.conf.d && \
+	{ echo "ERROR: we shouldn't have a /etc/ld.so.conf.d directory"; exit 1; } || true
+mkdir -p /home/ebenezer/embedded_linux/assignments-4-eolatuyi/buildroot/output/target/etc
+( \
+	echo "NAME=Buildroot"; \
+	echo "VERSION=2022.02.12-1-g8dd8f39494-dirty"; \
+	echo "ID=buildroot"; \
+	echo "VERSION_ID=2022.02.12"; \
+	echo "PRETTY_NAME=\"Buildroot 2022.02.12\"" \
+) >  /home/ebenezer/embedded_linux/assignments-4-eolatuyi/buildroot/output/target/usr/lib/os-release
+ln -sf ../usr/lib/os-release /home/ebenezer/embedded_linux/assignments-4-eolatuyi/buildroot/output/target/etc
+[7m>>>   Sanitizing RPATH in target tree[27m
+PER_PACKAGE_DIR=/home/ebenezer/embedded_linux/assignments-4-eolatuyi/buildroot/output/per-package /home/ebenezer/embedded_linux/assignments-4-eolatuyi/buildroot/support/scripts/fix-rpath target
+touch /home/ebenezer/embedded_linux/assignments-4-eolatuyi/buildroot/output/target/usr
+[7m>>>   Generating root filesystems common tables[27m
+rm -rf /home/ebenezer/embedded_linux/assignments-4-eolatuyi/buildroot/output/build/buildroot-fs
+mkdir -p /home/ebenezer/embedded_linux/assignments-4-eolatuyi/buildroot/output/build/buildroot-fs
+printf '   \n' >> /home/ebenezer/embedded_linux/assignments-4-eolatuyi/buildroot/output/build/buildroot-fs/full_users_table.txt
+printf '   	/bin/busybox                     f 4755 0  0 - - - - -\n\n' > /home/ebenezer/embedded_linux/assignments-4-eolatuyi/buildroot/output/build/buildroot-fs/full_devices_table.txt
+cat system/device_table.txt >> /home/ebenezer/embedded_linux/assignments-4-eolatuyi/buildroot/output/build/buildroot-fs/full_devices_table.txt
+[7m>>>   Generating filesystem image rootfs.ext2[27m
+mkdir -p /home/ebenezer/embedded_linux/assignments-4-eolatuyi/buildroot/output/images
+rm -rf /home/ebenezer/embedded_linux/assignments-4-eolatuyi/buildroot/output/build/buildroot-fs/ext2
+mkdir -p /home/ebenezer/embedded_linux/assignments-4-eolatuyi/buildroot/output/build/buildroot-fs/ext2
+rsync -auH --exclude=/THIS_IS_NOT_YOUR_ROOT_FILESYSTEM /home/ebenezer/embedded_linux/assignments-4-eolatuyi/buildroot/output/target/ /home/ebenezer/embedded_linux/assignments-4-eolatuyi/buildroot/output/build/buildroot-fs/ext2/target
+echo '#!/bin/sh' > /home/ebenezer/embedded_linux/assignments-4-eolatuyi/buildroot/output/build/buildroot-fs/ext2/fakeroot
+echo "set -e" >> /home/ebenezer/embedded_linux/assignments-4-eolatuyi/buildroot/output/build/buildroot-fs/ext2/fakeroot
+echo "chown -h -R 0:0 /home/ebenezer/embedded_linux/assignments-4-eolatuyi/buildroot/output/build/buildroot-fs/ext2/target" >> /home/ebenezer/embedded_linux/assignments-4-eolatuyi/buildroot/output/build/buildroot-fs/ext2/fakeroot
+PATH="/home/ebenezer/embedded_linux/assignments-4-eolatuyi/buildroot/output/host/bin:/home/ebenezer/embedded_linux/assignments-4-eolatuyi/buildroot/output/host/sbin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin" /home/ebenezer/embedded_linux/assignments-4-eolatuyi/buildroot/support/scripts/mkusers /home/ebenezer/embedded_linux/assignments-4-eolatuyi/buildroot/output/build/buildroot-fs/full_users_table.txt /home/ebenezer/embedded_linux/assignments-4-eolatuyi/buildroot/output/build/buildroot-fs/ext2/target >> /home/ebenezer/embedded_linux/assignments-4-eolatuyi/buildroot/output/build/buildroot-fs/ext2/fakeroot
+echo "/home/ebenezer/embedded_linux/assignments-4-eolatuyi/buildroot/output/host/bin/makedevs -d /home/ebenezer/embedded_linux/assignments-4-eolatuyi/buildroot/output/build/buildroot-fs/full_devices_table.txt /home/ebenezer/embedded_linux/assignments-4-eolatuyi/buildroot/output/build/buildroot-fs/ext2/target" >> /home/ebenezer/embedded_linux/assignments-4-eolatuyi/buildroot/output/build/buildroot-fs/ext2/fakeroot
+echo "find /home/ebenezer/embedded_linux/assignments-4-eolatuyi/buildroot/output/build/buildroot-fs/ext2/target/run/ -mindepth 1 -prune -print0 | xargs -0r rm -rf --" >> /home/ebenezer/embedded_linux/assignments-4-eolatuyi/buildroot/output/build/buildroot-fs/ext2/fakeroot
+echo "find /home/ebenezer/embedded_linux/assignments-4-eolatuyi/buildroot/output/build/buildroot-fs/ext2/target/tmp/ -mindepth 1 -prune -print0 | xargs -0r rm -rf --" >> /home/ebenezer/embedded_linux/assignments-4-eolatuyi/buildroot/output/build/buildroot-fs/ext2/fakeroot
+printf '   \n' >> /home/ebenezer/embedded_linux/assignments-4-eolatuyi/buildroot/output/build/buildroot-fs/ext2/fakeroot
+printf '   \n' >> /home/ebenezer/embedded_linux/assignments-4-eolatuyi/buildroot/output/build/buildroot-fs/ext2/fakeroot
+printf '   	rm -f /home/ebenezer/embedded_linux/assignments-4-eolatuyi/buildroot/output/images/rootfs.ext2\n	/home/ebenezer/embedded_linux/assignments-4-eolatuyi/buildroot/output/host/sbin/mkfs.ext4 -d /home/ebenezer/embedded_linux/assignments-4-eolatuyi/buildroot/output/build/buildroot-fs/ext2/target -r 1 -N 0 -m 5 -L "rootfs" -O ^64bit /home/ebenezer/embedded_linux/assignments-4-eolatuyi/buildroot/output/images/rootfs.ext2 "60M" || { ret=$?; echo "*** Maybe you need to increase the filesystem size (BR2_TARGET_ROOTFS_EXT2_SIZE)" 1>&2; exit $ret; }\n' >> /home/ebenezer/embedded_linux/assignments-4-eolatuyi/buildroot/output/build/buildroot-fs/ext2/fakeroot
+chmod a+x /home/ebenezer/embedded_linux/assignments-4-eolatuyi/buildroot/output/build/buildroot-fs/ext2/fakeroot
+PATH="/home/ebenezer/embedded_linux/assignments-4-eolatuyi/buildroot/output/host/bin:/home/ebenezer/embedded_linux/assignments-4-eolatuyi/buildroot/output/host/sbin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin" FAKEROOTDONTTRYCHOWN=1 /home/ebenezer/embedded_linux/assignments-4-eolatuyi/buildroot/output/host/bin/fakeroot -- /home/ebenezer/embedded_linux/assignments-4-eolatuyi/buildroot/output/build/buildroot-fs/ext2/fakeroot
+rootdir=/home/ebenezer/embedded_linux/assignments-4-eolatuyi/buildroot/output/build/buildroot-fs/ext2/target
+table='/home/ebenezer/embedded_linux/assignments-4-eolatuyi/buildroot/output/build/buildroot-fs/full_devices_table.txt'
+mke2fs 1.46.5 (30-Dec-2021)
+Creating regular file /home/ebenezer/embedded_linux/assignments-4-eolatuyi/buildroot/output/images/rootfs.ext2
+64-bit filesystem support is not enabled.  The larger fields afforded by this feature enable full-strength checksumming.  Pass -O 64bit to rectify.
+Creating filesystem with 61440 1k blocks and 15360 inodes
+Filesystem UUID: 25ee8358-74bb-40a8-a272-2922fdcdf587
+Superblock backups stored on blocks: 
+	8193, 24577, 40961, 57345
+
+Allocating group tables: 0/8   done                            
+Writing inode tables: 0/8   done                            
+Creating journal (4096 blocks): done
+Copying files into the device: done
+Writing superblocks and filesystem accounting information: 0/8   done
+
+ln -sf rootfs.ext2 /home/ebenezer/embedded_linux/assignments-4-eolatuyi/buildroot/output/images/rootfs.ext4
+[7m>>>   Executing post-image script board/qemu/post-image.sh[27m
+make: Leaving directory '/home/ebenezer/embedded_linux/assignments-4-eolatuyi/buildroot'
+Build returned 0
+Starting validation step
+Executing runqemu.sh in background
+# Host [localhost]:10022 found: line 20
+/home/ebenezer/.ssh/known_hosts updated.
+Original contents retained as /home/ebenezer/.ssh/known_hosts.old
+Waiting for qemu to startup
+Booting Linux on physical CPU 0x0000000000 [0x410fd034]
+Linux version 5.15.18 (ebenezer@instance-20240219-031404) (aarch64-buildroot-linux-uclibc-gcc.br_real (Buildroot 2022.02.12-1-g8dd8f39494) 10.4.0, GNU ld (GNU Binutils) 2.36.1) #1 SMP Mon Apr 15 07:21:13 UTC 2024
+Machine model: linux,dummy-virt
+efi: UEFI not found.
+Zone ranges:
+  DMA      [mem 0x0000000040000000-0x0000000047ffffff]
+  DMA32    empty
+  Normal   empty
+Movable zone start for each node
+Early memory node ranges
+  node   0: [mem 0x0000000040000000-0x0000000047ffffff]
+Initmem setup node 0 [mem 0x0000000040000000-0x0000000047ffffff]
+psci: probing for conduit method from DT.
+psci: PSCIv0.2 detected in firmware.
+psci: Using standard PSCI v0.2 function IDs
+psci: Trusted OS migration not required
+percpu: Embedded 17 pages/cpu s32344 r8192 d29096 u69632
+Detected VIPT I-cache on CPU0
+CPU features: detected: ARM erratum 843419
+CPU features: detected: ARM erratum 845719
+Built 1 zonelists, mobility grouping on.  Total pages: 32256
+Kernel command line: rootwait root=/dev/vda console=ttyAMA0
+Dentry cache hash table entries: 16384 (order: 5, 131072 bytes, linear)
+Inode-cache hash table entries: 8192 (order: 4, 65536 bytes, linear)
+mem auto-init: stack:off, heap alloc:off, heap free:off
+Memory: 116484K/131072K available (7040K kernel code, 838K rwdata, 1508K rodata, 1088K init, 320K bss, 14588K reserved, 0K cma-reserved)
+SLUB: HWalign=64, Order=0-3, MinObjects=0, CPUs=1, Nodes=1
+rcu: Hierarchical RCU implementation.
+rcu: 	RCU restricting CPUs from NR_CPUS=256 to nr_cpu_ids=1.
+rcu: RCU calculated value of scheduler-enlistment delay is 25 jiffies.
+rcu: Adjusting geometry for rcu_fanout_leaf=16, nr_cpu_ids=1
+NR_IRQS: 64, nr_irqs: 64, preallocated irqs: 0
+Root IRQ handler: gic_handle_irq
+GICv2m: range[mem 0x08020000-0x08020fff], SPI[80:143]
+random: get_random_bytes called from start_kernel+0x3f0/0x5fc with crng_init=0
+arch_timer: cp15 timer(s) running at 62.50MHz (virt).
+clocksource: arch_sys_counter: mask: 0xffffffffffffff max_cycles: 0x1cd42e208c, max_idle_ns: 881590405314 ns
+sched_clock: 56 bits at 62MHz, resolution 16ns, wraps every 4398046511096ns
+Console: colour dummy device 80x25
+Calibrating delay loop (skipped), value calculated using timer frequency.. 125.00 BogoMIPS (lpj=250000)
+pid_max: default: 32768 minimum: 301
+Mount-cache hash table entries: 512 (order: 0, 4096 bytes, linear)
+Mountpoint-cache hash table entries: 512 (order: 0, 4096 bytes, linear)
+rcu: Hierarchical SRCU implementation.
+EFI services will not be available.
+smp: Bringing up secondary CPUs ...
+smp: Brought up 1 node, 1 CPU
+SMP: Total of 1 processors activated.
+CPU features: detected: 32-bit EL0 Support
+CPU features: detected: CRC32 instructions
+CPU: All CPU(s) started at EL1
+alternatives: patching kernel code
+devtmpfs: initialized
+clocksource: jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 7645041785100000 ns
+futex hash table entries: 256 (order: 2, 16384 bytes, linear)
+DMI not present or invalid.
+NET: Registered PF_NETLINK/PF_ROUTE protocol family
+DMA: preallocated 128 KiB GFP_KERNEL pool for atomic allocations
+DMA: preallocated 128 KiB GFP_KERNEL|GFP_DMA pool for atomic allocations
+DMA: preallocated 128 KiB GFP_KERNEL|GFP_DMA32 pool for atomic allocations
+hw-breakpoint: found 6 breakpoint and 4 watchpoint registers.
+ASID allocator initialised with 65536 entries
+Serial: AMBA PL011 UART driver
+9000000.pl011: ttyAMA0 at MMIO 0x9000000 (irq = 47, base_baud = 0) is a PL011 rev1
+printk: console [ttyAMA0] enabled
+iommu: Default domain type: Translated 
+iommu: DMA domain TLB invalidation policy: strict mode 
+vgaarb: loaded
+SCSI subsystem initialized
+pps_core: LinuxPPS API ver. 1 registered
+pps_core: Software ver. 5.3.6 - Copyright 2005-2007 Rodolfo Giometti <giometti@linux.it>
+PTP clock support registered
+clocksource: Switched to clocksource arch_sys_counter
+NET: Registered PF_INET protocol family
+IP idents hash table entries: 2048 (order: 2, 16384 bytes, linear)
+tcp_listen_portaddr_hash hash table entries: 256 (order: 0, 4096 bytes, linear)
+TCP established hash table entries: 1024 (order: 1, 8192 bytes, linear)
+TCP bind hash table entries: 1024 (order: 2, 16384 bytes, linear)
+TCP: Hash tables configured (established 1024 bind 1024)
+UDP hash table entries: 256 (order: 1, 8192 bytes, linear)
+UDP-Lite hash table entries: 256 (order: 1, 8192 bytes, linear)
+NET: Registered PF_UNIX/PF_LOCAL protocol family
+PCI: CLS 0 bytes, default 64
+hw perfevents: enabled with armv8_pmuv3 PMU driver, 5 counters available
+workingset: timestamp_bits=46 max_order=15 bucket_order=0
+fuse: init (API version 7.34)
+Block layer SCSI generic (bsg) driver version 0.4 loaded (major 249)
+io scheduler mq-deadline registered
+io scheduler kyber registered
+pci-host-generic 4010000000.pcie: host bridge /pcie@10000000 ranges:
+pci-host-generic 4010000000.pcie:       IO 0x003eff0000..0x003effffff -> 0x0000000000
+pci-host-generic 4010000000.pcie:      MEM 0x0010000000..0x003efeffff -> 0x0010000000
+pci-host-generic 4010000000.pcie:      MEM 0x8000000000..0xffffffffff -> 0x8000000000
+pci-host-generic 4010000000.pcie: Memory resource size exceeds max for 32 bits
+pci-host-generic 4010000000.pcie: ECAM at [mem 0x4010000000-0x401fffffff] for [bus 00-ff]
+pci-host-generic 4010000000.pcie: PCI host bridge to bus 0000:00
+pci_bus 0000:00: root bus resource [bus 00-ff]
+pci_bus 0000:00: root bus resource [io  0x0000-0xffff]
+pci_bus 0000:00: root bus resource [mem 0x10000000-0x3efeffff]
+pci_bus 0000:00: root bus resource [mem 0x8000000000-0xffffffffff]
+pci 0000:00:00.0: [1b36:0008] type 00 class 0x060000
+pci 0000:00:01.0: [1af4:1005] type 00 class 0x00ff00
+pci 0000:00:01.0: reg 0x10: [io  0x0000-0x001f]
+pci 0000:00:01.0: reg 0x20: [mem 0x00000000-0x00003fff 64bit pref]
+pci 0000:00:01.0: BAR 4: assigned [mem 0x8000000000-0x8000003fff 64bit pref]
+pci 0000:00:01.0: BAR 0: assigned [io  0x1000-0x101f]
+virtio-pci 0000:00:01.0: enabling device (0000 -> 0003)
+cacheinfo: Unable to detect cache hierarchy for CPU 0
+random: fast init done
+random: crng init done
+virtio_blk virtio0: [vda] 122880 512-byte logical blocks (62.9 MB/60.0 MiB)
+rtc-pl031 9010000.pl031: registered as rtc0
+rtc-pl031 9010000.pl031: setting system clock to 2024-04-19T07:38:00 UTC (1713512280)
+NET: Registered PF_INET6 protocol family
+Segment Routing with IPv6
+In-situ OAM (IOAM) with IPv6
+sit: IPv6, IPv4 and MPLS over IPv4 tunneling driver
+NET: Registered PF_PACKET protocol family
+NET: Registered PF_KEY protocol family
+NET: Registered PF_VSOCK protocol family
+registered taskstats version 1
+EXT4-fs (vda): mounted filesystem with ordered data mode. Opts: (null). Quota mode: disabled.
+VFS: Mounted root (ext4 filesystem) readonly on device 254:0.
+devtmpfs: mounted
+Freeing unused kernel memory: 1088K
+Run /sbin/init as init process
+EXT4-fs (vda): re-mounted. Opts: (null). Quota mode: disabled.
+Starting syslogd: OK
+Starting klogd: OK
+Running sysctl: OK
+Saving random seed: OK
+Starting network: udhcpc: started, v1.35.0
+udhcpc: broadcasting discover
+udhcpc: broadcasting select for 10.0.2.15, server 10.0.2.2
+udhcpc: lease of 10.0.2.15 obtained from 10.0.2.2, lease time 86400
+deleting routers
+adding dns 10.0.2.3
+OK
+Starting dropbear sshd: OK
+
+Welcome to Buildroot
+buildroot login: still waiting for qemu to startup... last attempt returned 255 with output 
+ssh: connect to host localhost port 10022: Connection refused
+SSH login successful, waiting 40 additional seconds for process startup
+Using default value AELD_IS_FUN for string to write
+Using default value 10 for number of files to write
+Writing 10 files containing string AELD_IS_FUN to /tmp/aeld-data
+/tmp/aeld-data created
+The number of files are 10 and the number of matching lines are 10
+success
+Killing qemu
+qemu-system-aarch64: terminating on signal 15 from pid 478625 ()
+~/embedded_linux/assignments-4-eolatuyi/assignment-autotest/test/assignment4-buildroot
+Test of assignment assignment4-buildroot complete with success
