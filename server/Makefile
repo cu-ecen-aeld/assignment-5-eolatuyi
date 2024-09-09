@@ -5,7 +5,7 @@
 # Author: Ebenezer Olatuyi
 # Date  :5-14-2024
 CC := gcc
-CFLAGS := -Wall -Wextra -Werror
+CFLAGS := -Wall -Wextra -Werror -pthread
 
 ifeq ($(CROSS_COMPILE),aarch64-none-linux-gnu-)
 	CC := $(CROSS_COMPILE)gcc
