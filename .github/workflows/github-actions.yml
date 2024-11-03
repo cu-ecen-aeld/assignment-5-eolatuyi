@@ -9,8 +9,8 @@ on:
 
 jobs:
   full-test:
-    container: cuaesd/aesd-autotest:assignment5
     runs-on: ubuntu-latest
+    container: cuaesd/aesd-autotest:assignment5
     timeout-minutes: 120
 
     steps:
@@ -19,10 +19,10 @@ jobs:
     - name: Checkout submodules
       run: git submodule update --init --recursive
 
-    - name: Install ssh-agent
+    - name: Install dependencies
       run: |
         sudo apt-get update
-        sudo apt-get install -y openssh-client
+        sudo apt-get install -y file
 
     - uses: webfactory/ssh-agent@v0.5.3
       with:
